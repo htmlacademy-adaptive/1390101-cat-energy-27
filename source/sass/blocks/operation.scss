@@ -1,0 +1,20 @@
+.operation__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  padding-bottom: 40px;
+  margin: 0;
+}
+
+.operation__list {
+  list-style-type: none;
+}
+
+.operation__item {
+  font-family: $font-second;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-grey-600;
+  padding-bottom: 27px;
+}

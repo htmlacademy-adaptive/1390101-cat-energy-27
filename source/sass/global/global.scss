@@ -16,7 +16,7 @@
 }
 
 body {
-  font-family: "Oswald";
+  font-family: $font-main;
   margin: 0;
   background-color: #ffffff;
   color: #000000;
@@ -25,4 +25,9 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: $color-black;
 }
