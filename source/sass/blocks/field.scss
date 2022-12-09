@@ -1,0 +1,17 @@
+.field__input {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: $color-grey-600;
+  margin: 0;
+}
+
+.field__input--textarea {
+  width: 100%;
+  font-size: 20px;
+  line-height: 30px;
+  padding-left: 19px;
+  padding-top: 10px;
+  margin-bottom: 65px;
+}

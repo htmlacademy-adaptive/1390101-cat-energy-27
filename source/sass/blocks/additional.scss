@@ -1,0 +1,38 @@
+.additional__title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  padding-bottom: 36px;
+}
+
+.additional__list {
+  margin: 0;
+  list-style: none;
+}
+
+.additional__link {
+  color: $color-grey-700;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.additional__number {
+  font-family: $font-second;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: $color-grey-600;
+  margin: 0;
+}
+
+.additional__sum {
+  font-family: $font-second;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: $color-grey-600;
+  margin: 0;
+}

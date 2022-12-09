@@ -3,9 +3,11 @@
 @import "./global/fonts.scss";
 @import "./global/variables.scss";
 @import "./global/global.scss";
+@import "./global/button.scss";
 
 // index
 
+@import "./blocks/main-container.scss";
 @import "./blocks/site-list.scss";
 @import "./blocks/selection.scss";
 @import "./blocks/offer.scss";
@@ -18,4 +20,17 @@
 
 // catalog
 
-@import "./blocks/main-container.scss";
+@import "./blocks/product.scss";
+@import "./blocks/product-card.scss";
+@import "./blocks/specifications.scss";
+@import "./blocks/additional.scss";
+@import "./blocks/present.scss";
+
+// form
+
+@import "./blocks/form.scss";
+@import "./blocks/order-form.scss";
+@import "./blocks/field.scss";
+@import "./blocks/form-group.scss";
+@import "./blocks/form-program.scss";
+@import "./blocks/form-options.scss";

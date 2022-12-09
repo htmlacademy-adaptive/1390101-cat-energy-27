@@ -1,0 +1,36 @@
+.product__list {
+  margin: 0;
+  list-style: none;
+}
+
+.product__reloading {
+  display: block;
+  text-align: center;
+  padding-top: 78px;
+  padding-bottom: 35px;
+}
+
+.product__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-grey-900;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+}
+
+.product__description {
+  font-family: $font-second;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-grey-600;
+  margin: 0;
+  padding-bottom: 21px;
+}
+
+.product__button {
+  color: $color-grey-600;
+  background-color: $color-grey-200;
+}
