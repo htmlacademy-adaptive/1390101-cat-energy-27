@@ -4,6 +4,7 @@
   line-height: 18px;
   margin: 0;
   padding-bottom: 60px;
+  text-transform: uppercase;
 }
 
 .form__button {
@@ -15,7 +16,7 @@
 }
 
 .form__text {
-  font-family: $font-second;
+  font-family: $font-main;
   font-size: 16px;
   line-height: 16px;
   font-style: 400;
