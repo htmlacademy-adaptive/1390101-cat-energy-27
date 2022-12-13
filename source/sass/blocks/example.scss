@@ -1,0 +1,44 @@
+.example {
+  background-color: $color-grey-400;
+}
+
+.example__wrapper {
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+
+.example__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.example__text {
+  font-family: $font-second;
+  color: $color-grey-600;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.example__description-statistics {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.example__description-text {
+  font-family: $font-second;
+  color: $color-grey-600;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.example__description-result {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}

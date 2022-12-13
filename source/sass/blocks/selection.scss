@@ -1,0 +1,29 @@
+.selection {
+  color: $color-white;
+  background-color: $color-green-500;
+}
+
+.selection__title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.selection__description {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.selection__button {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 44px;
+  padding-right: 44px;
+}

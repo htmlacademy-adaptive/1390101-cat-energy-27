@@ -1,0 +1,16 @@
+.form-program {
+  font-size: 20px;
+  line-height: 30px;
+  color: $color-grey-700;
+  padding: 25px;
+  border: 1px solid $color-grey-150;
+}
+
+.form-program__list {
+  list-style: none;
+  margin: 0;
+}
+
+.form-program__item {
+  margin-bottom: 13px;
+}
