@@ -1,10 +1,6 @@
 .selection {
   color: $color-white;
-  background-color: $color-green-1000;
-  padding-top: 27px;
-  padding-bottom: 20px;
-  padding-left: 36px;
-  padding-right: 35px;
+  background-color: $color-green-500;
 }
 
 .selection__title {
@@ -12,7 +8,6 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  padding-bottom: 25px;
 }
 
 .selection__description {
@@ -21,18 +16,12 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  padding-bottom: 29px;
 }
 
 .selection__button {
-  display: block;
-  text-align: center;
-  color: $color-white;
-  text-transform: uppercase;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  width: 280px;
   padding-top: 7px;
   padding-bottom: 7px;
   padding-left: 44px;
