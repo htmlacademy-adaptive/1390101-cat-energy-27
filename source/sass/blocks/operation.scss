@@ -1,3 +1,8 @@
+.operation {
+  display: flex;
+  flex-direction: column;
+}
+
 .operation__title {
   font-weight: 400;
   font-size: 36px;
@@ -8,6 +13,12 @@
 
 .operation__list {
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .operation__item {

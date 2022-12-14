@@ -3,6 +3,12 @@
   background-color: $color-green-500;
 }
 
+.selection__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+
 .selection__title {
   margin: 0;
   font-weight: 400;
