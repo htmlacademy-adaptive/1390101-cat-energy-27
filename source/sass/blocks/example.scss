@@ -49,11 +49,11 @@
   text-transform: uppercase;
 }
 
-.example__statistic {
+.example__list {
   grid-column: 1/3;
 }
 
-.example__list {
-  display: flex;
-  justify-content: space-between;
+.example__image-slider {
+  grid-column: 1/3;
 }
+// второй раз переписываю и снова запуталась здесь с сеткой
