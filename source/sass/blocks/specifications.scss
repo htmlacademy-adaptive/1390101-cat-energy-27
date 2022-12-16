@@ -1,9 +1,16 @@
 .specifications {
+  display: grid;
+  grid-template-columns: 50px max-content;
   font-family: $font-main;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   color: $color-grey-600;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
+  // Почему не разьезжаются?(
 }
 
 .specifications__meaning {

@@ -4,6 +4,10 @@
   color: $color-grey-700;
   padding: 25px;
   border: 1px solid $color-grey-150;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+  }
 }
 
 .form-program__list {

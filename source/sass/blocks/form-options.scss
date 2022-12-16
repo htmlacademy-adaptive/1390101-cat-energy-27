@@ -2,8 +2,24 @@
   border: none;
 }
 
+.form-options__title {
+  font-size: 36px;
+  line-height: 36px;
+}
+
 .form-options__list {
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .form-options__item {

@@ -3,10 +3,10 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    align-self: flex-end;
+    justify-content: end;
   }
 
-  // Не работает флекс для блока, почему?
+  // почему не расходится в стороны
 }
 
 .copyright__text {

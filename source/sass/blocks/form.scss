@@ -10,9 +10,17 @@
 .form__button {
   display: block;
   line-height: 0px;
-  width: 100%;
+  min-width: 280px;
   padding-top: 13px;
   padding-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 282px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 568px;
+  }
 }
 
 .form__text {
@@ -20,4 +28,16 @@
   font-size: 16px;
   line-height: 16px;
   font-style: 400;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 84px;
+  }
+}
+
+.form__group-button {
+  display: flex;
 }

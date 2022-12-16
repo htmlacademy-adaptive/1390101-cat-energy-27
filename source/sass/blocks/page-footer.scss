@@ -10,4 +10,8 @@
 
 .page-footer__logo-link {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
 }
