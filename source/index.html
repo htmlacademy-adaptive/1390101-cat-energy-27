@@ -10,14 +10,15 @@
 
 <body class="page__body">
 
-  <header class="main-header">
+  <header class="main-header container">
     <a class="main-header__logo">
-      <img src="#" width="34" height="38" alt="Кэт Энерджи">
+      <img class="main-header__img" src="#" width="34" height="38" alt="Кэт Энерджи">
+      <img class="main-header__img-2" src="#" width="101" height="18" alt="" aria-hidden="true">
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+    <button class="main-header__toggle" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+    <nav class="main-nav main-nav--closed">
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active">
           <a>
@@ -47,6 +48,8 @@
         <p class="selection__description">
           Занялся собой? Займись котом!
         </p>
+        <img class="selection__image" src="" width="280" height="270"
+          alt="Пример питания для котов Кэт Энерджи Про с курицей 500 грамм">
         <a class="selection__button button" href="form.html">Подобрать программу</a>
       </div>
     </section>
@@ -102,13 +105,15 @@
 
     <section class="example">
       <div class="example__wrapper container">
-        <h2 class="example__title">
-          Живой пример
-        </h2>
-        <p class="example__text">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
-          изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
+        <div class="example__text-wrapper">
+          <h2 class="example__title">
+            Живой пример
+          </h2>
+          <p class="example__text">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
+            изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          </p>
+        </div>
         <div class="example__statistic">
           <dl class="example__list">
             <div class="example__list-item">

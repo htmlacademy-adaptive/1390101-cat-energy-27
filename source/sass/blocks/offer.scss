@@ -1,14 +1,12 @@
-.offer {
+.offer__wrapper {
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
   }
 }
-// Не срабатывает на десктопе
 
 .offer__inner {
-  display: flex;
-  flex-direction: column;
   background-color: $color-grey-200;
   padding-top: 21px;
   padding-left: 22px;
@@ -25,10 +23,6 @@
   line-height: 37px;
   text-transform: uppercase;
   padding-bottom: 20px;
-
-  @media (min-width: $tablet-width) {
-    width: 340px;
-  }
 }
 
 .offer__description {
@@ -40,10 +34,6 @@
   margin: 0;
   padding-bottom: 23px;
   border-bottom: 1px solid $color-grey-300;
-
-  @media (min-width: $tablet-width) {
-    width: 340px;
-  }
 }
 
 .offer__link {
@@ -53,8 +43,4 @@
   line-height: 16px;
   text-transform: uppercase;
   padding-top: 19px;
-
-  @media (min-width: $tablet-width) {
-    width: 340px;
-  }
 }

@@ -24,10 +24,4 @@
   display: flex;
   justify-content: space-between;
   padding: 26px 0;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
 }
