@@ -1,12 +1,10 @@
-.copyright {
+.copyright__link {
   display: flex;
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    justify-content: end;
+    justify-content: flex-end;
   }
-
-  // почему не расходится в стороны
 }
 
 .copyright__text {
