@@ -10,12 +10,12 @@
 .form__button {
   display: block;
   line-height: 0px;
-  min-width: 280px;
   padding-top: 13px;
   padding-bottom: 13px;
+  grid-column: 1/3;
 
   @media (min-width: $tablet-width) {
-    min-width: 282px;
+    grid-column: 1/2;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,17 +27,30 @@
   font-family: $font-main;
   font-size: 16px;
   line-height: 16px;
-  font-style: 400;
+  grid-column: 1/3;
+  padding-top: 21px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-left: 64px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: 84px;
+    grid-column: 2/3;
+    padding-top: 0;
+    justify-self: start;
   }
 }
 
+.form__group {
+  padding: 0;
+}
+
 .form__group-button {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 84px;
+  }
 }

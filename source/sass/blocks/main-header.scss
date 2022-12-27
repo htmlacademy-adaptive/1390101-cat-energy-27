@@ -1,6 +1,6 @@
 .main-header {
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0;
   display: grid;
   grid-template-columns: 40px 1fr 40px;
 
@@ -10,7 +10,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px;
+    padding: 0;
+    width: 1220px;
   }
 }
 
@@ -19,14 +20,17 @@
   display: grid;
   grid-template-columns: 40px 1fr;
   justify-content: space-between;
+  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
+    padding: 0;
   }
 }
 
 .main-header__toggle {
   grid-column: 3/4;
+  width: 24px;
 
   @media (min-width: $tablet-width) {
     display: none;

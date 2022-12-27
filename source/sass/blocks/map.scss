@@ -17,7 +17,9 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  margin: 0;
+  margin-right: 8px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .map__address {
@@ -48,10 +50,13 @@
 }
 
 .map__container {
+  @media (min-width: $tablet-width) {
+    min-width: 100%;
+  }
+
   @media (min-width: $desktop-width) {
     position: absolute;
     object-fit: cover;
-    min-width: 100%;
     min-height: 100%;
     top: 0;
     right: 0;
@@ -60,5 +65,3 @@
     z-index: -1;
   }
 }
-
-// Странно, что карта на планшетной версии не растягивается
