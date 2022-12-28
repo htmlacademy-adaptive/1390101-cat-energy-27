@@ -5,6 +5,11 @@
 .example__wrapper {
   padding-top: 25px;
   padding-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .example__title {
@@ -14,7 +19,7 @@
 }
 
 .example__text {
-  font-family: $font-second;
+  font-family: $font-main;
   color: $color-grey-600;
   font-weight: 400;
   font-size: 14px;
@@ -26,10 +31,11 @@
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .example__description-text {
-  font-family: $font-second;
+  font-family: $font-main;
   color: $color-grey-600;
   font-weight: 400;
   font-size: 12px;
@@ -37,8 +43,31 @@
 }
 
 .example__description-result {
+  text-align: center;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.example__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__statistic {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+  }
+}
+
+.example__image-slider {
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+  }
 }

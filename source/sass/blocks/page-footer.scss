@@ -1,4 +1,17 @@
 .page-footer__wrapper {
   padding-top: 39px;
   padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.page-footer__logo-link {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
 }

@@ -3,4 +3,13 @@
   border: none;
   font-size: 16px;
   line-height: 18px;
+  padding: 0;
+}
+
+.order-form__group-inner {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
 }

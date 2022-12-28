@@ -1,0 +1,26 @@
+.main-nav {
+  grid-column: 1/4;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2/4;
+  }
+}
+
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-end;
+  }
+}
+
+// .main-nav--closed {
+//   display: none;
+// }

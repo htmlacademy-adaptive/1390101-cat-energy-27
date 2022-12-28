@@ -1,14 +1,32 @@
+.additional__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 80px;
+  }
+}
+
 .additional__title {
   margin: 0;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   padding-bottom: 36px;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/3;
+    padding: 20px;
+  }
 }
 
 .additional__list {
+  padding: 0;
   margin: 0;
   list-style: none;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/4;
+  }
 }
 
 .additional__link {
@@ -17,22 +35,74 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+  grid-column: 1/2;
 }
 
 .additional__number {
-  font-family: $font-second;
+  font-family: $font-main;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   color: $color-grey-600;
   margin: 0;
+  grid-column: 1/2;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+    padding-left: 100px;
+  }
 }
 
 .additional__sum {
-  font-family: $font-second;
+  font-family: $font-main;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   color: $color-grey-600;
   margin: 0;
+  grid-column: 2/3;
+  justify-self: end;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3/4;
+    padding-right: 30px;
+  }
+}
+
+.additional__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 13px;
+  padding-bottom: 19px;
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0;
+  }
+}
+
+.additional__button {
+  grid-column: 1/3;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 4/5;
+  }
+}
+
+.additional__text {
+  color: $color-white;
+  background-color: rgba(104, 183, 56, 0.85);
+  min-height: 280px;
+  padding-top: 186px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 71px;
+    padding-right: 124px;
+    max-height: 707px;
+  }
+}
+
+.additional__present {
+  background-color: rgba(104, 183, 56, 0.85);
 }

@@ -4,19 +4,53 @@
   line-height: 18px;
   margin: 0;
   padding-bottom: 60px;
+  text-transform: uppercase;
 }
 
 .form__button {
   display: block;
   line-height: 0px;
-  width: 100%;
   padding-top: 13px;
   padding-bottom: 13px;
+  grid-column: 1/3;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 568px;
+  }
 }
 
 .form__text {
-  font-family: $font-second;
+  font-family: $font-main;
   font-size: 16px;
   line-height: 16px;
-  font-style: 400;
+  grid-column: 1/3;
+  padding-top: 21px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2/3;
+    padding-top: 0;
+    justify-self: start;
+  }
+}
+
+.form__group {
+  padding: 0;
+}
+
+.form__group-button {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 84px;
+  }
 }
