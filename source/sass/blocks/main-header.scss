@@ -29,8 +29,10 @@
 }
 
 .main-header__toggle {
+  display: block;
   grid-column: 3/4;
   width: 24px;
+  height: 16px;
 
   @media (min-width: $tablet-width) {
     display: none;
