@@ -21,6 +21,12 @@
   }
 }
 
-// .main-nav--closed {
-//   display: none;
-// }
+.main-nav--closed .site-list__item {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
+  &--active {
+    display: block;
+  }
+}

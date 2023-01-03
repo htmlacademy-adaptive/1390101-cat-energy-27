@@ -1,5 +1,9 @@
 .example {
   background-color: $color-grey-400;
+
+  @media (min-width: $tablet-width) {
+    background-color: $color-white;
+  }
 }
 
 .example__wrapper {
@@ -16,6 +20,14 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 43px;
+    padding-bottom: 63px;
+  }
 }
 
 .example__text {
@@ -24,6 +36,12 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  margin: 0;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 54px;
+  }
 }
 
 .example__description-statistics {
@@ -48,17 +66,30 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .example__list {
   display: flex;
   justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 11px;
+}
+
+.example__list-item {
+  box-sizing: border-box;
+  border: 1px solid $color-grey-500;
+  border-radius: 3px;
+  width: 124px;
+  height: 56px;
 }
 
 .example__statistic {
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-bottom: 91px;
   }
 
   @media (min-width: $desktop-width) {

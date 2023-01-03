@@ -8,6 +8,13 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+  padding-top: 27px;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+    padding-bottom: 41px;
+  }
 }
 
 .selection__description {
@@ -16,6 +23,11 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+  padding-bottom: 302px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 49px;
+  }
 }
 
 .selection__button {
