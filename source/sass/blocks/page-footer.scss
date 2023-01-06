@@ -10,8 +10,12 @@
 
 .page-footer__logo-link {
   display: block;
+  padding-bottom: 20px;
+  text-align: center;
+  border-bottom: 1px solid $color-grey-300;
 
   @media (min-width: $tablet-width) {
     text-align: left;
+    // Как выровнять по центру, если текст-алин занято?
   }
 }

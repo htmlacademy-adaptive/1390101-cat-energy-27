@@ -1,6 +1,11 @@
 .selection {
   color: $color-white;
   background-color: $color-green-500;
+
+  @media (min-width: $tablet-width) {
+    color: $color-black;
+    background-color: $color-white;
+  }
 }
 
 .selection__title {
@@ -10,6 +15,7 @@
   line-height: 36px;
   padding-top: 27px;
   padding-bottom: 25px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     padding-top: 60px;
@@ -23,11 +29,17 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  padding-bottom: 302px;
+  text-align: center;
+  padding-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 49px;
   }
+}
+
+.selection__image {
+  display: block;
+  margin: 0 auto;
 }
 
 .selection__button {

@@ -26,18 +26,30 @@
 }
 
 .offer__title {
+  position: relative;
   margin: 0;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
   padding-bottom: 20px;
-  padding-left: 91px;
-
-  @media (min-width: $tablet-width) {
-    padding-left: 0;
-  }
 }
+
+.offer__title--thin::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/cat_back.svg");
+  background-repeat: no-repeat;
+  // в разметке(инспекторе) появилась, но не отображается
+}
+
+.offer__title--weight::before {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-image: url("../img/cat_back_big.svg");
+}
+
 
 .offer__description {
   font-family: $font-main;
@@ -57,7 +69,7 @@
   line-height: 16px;
   text-transform: uppercase;
   padding-top: 19px;
-  background-image: url(../img/arrow.svg);
+  background-image: url("../img/arrow.svg");
   background-repeat: no-repeat;
   background-position-x: 40%;
   background-position-y: 90%;
