@@ -37,12 +37,50 @@
   line-height: 18px;
   color: $color-grey-600;
   padding-bottom: 27px;
+  padding-left: 80px;
+  padding-top: 10px;
 }
 
-.operation__item--one::before {
+.operation__item--useful::before {
   content: "";
   position: absolute;
-  background-image: url("../img/operation-one.svg");
+  background-image: url("../img/operation-useful.svg");
   background-repeat: no-repeat;
-  // тоже не понимаю, почему не появляется
+  width: 60px;
+  height: 60px;
+  right: 0;
+  left: 0;
+}
+
+.operation__item--instant::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/operation-instant.svg");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  right: 0;
+  left: 0;
+}
+
+.operation__item--use::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/operation-use.svg");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  right: 0;
+  left: 0;
+}
+
+.operation__item--changes::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/operation-changes.svg");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  right: 0;
+  left: 0;
 }

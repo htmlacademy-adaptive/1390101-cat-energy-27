@@ -1,16 +1,15 @@
 .copyright {
-  padding-top: 20px;
-  padding-bottom: 40px;
-}
-
-.copyright__link {
   display: flex;
   justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
   }
 }
+
+// переделала на блок, но картинка пропала
 
 .copyright__text {
   margin: 0;
@@ -26,7 +25,7 @@
 }
 
 .copyright__link-developer {
-  background-image: url("../img/html academy_footer-logo-img.svg");
+  background-image: url("../img/htmlacademy-footer-logo-img.svg");
   background-repeat: no-repeat;
   width: 27px;
   height: 34px;

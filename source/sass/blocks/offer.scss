@@ -33,21 +33,32 @@
   line-height: 37px;
   text-transform: uppercase;
   padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 90px;
 }
 
 .offer__title--thin::before {
   content: "";
   position: absolute;
-  background-image: url("../img/cat_back.svg");
+  background-image: url("../img/cat-back.svg");
   background-repeat: no-repeat;
-  // в разметке(инспекторе) появилась, но не отображается
+  right: 0;
+  bottom: 10px;
+  left: 5px;
+  width: 50px;
+  height: 53px;
 }
 
 .offer__title--weight::before {
   content: "";
   position: absolute;
   background-repeat: no-repeat;
-  background-image: url("../img/cat_back_big.svg");
+  background-image: url("../img/cat-back-big.svg");
+  right: 0;
+  bottom: 10px;
+  left: 5px;
+  width: 67px;
+  height: 50px;
 }
 
 
