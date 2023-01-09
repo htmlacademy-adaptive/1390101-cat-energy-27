@@ -1,6 +1,9 @@
-.operation__wrapper {
+.operation {
+  padding-bottom: 49px;
+
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid $color-grey-100;
+    padding-bottom: 47px;
   }
 }
 

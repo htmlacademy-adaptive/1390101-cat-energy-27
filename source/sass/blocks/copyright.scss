@@ -9,8 +9,6 @@
   }
 }
 
-// переделала на блок, но картинка пропала
-
 .copyright__text {
   margin: 0;
   font-family: $font-main;
@@ -22,12 +20,4 @@
   @media (min-width: $tablet-width) {
     margin-right: 27px;
   }
-}
-
-.copyright__link-developer {
-  background-image: url("../img/htmlacademy-footer-logo-img.svg");
-  background-repeat: no-repeat;
-  width: 27px;
-  height: 34px;
-  font-size: 0;
 }
