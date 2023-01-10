@@ -1,7 +1,13 @@
 .social {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid $color-grey-300;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
 }
 
 .social__list {
