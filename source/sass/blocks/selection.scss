@@ -1,15 +1,24 @@
 .selection {
+  position: relative;
   color: $color-white;
   background-color: rgba(104, 183, 56, 0.85);
   background-repeat: no-repeat;
   background-image:
-    url("../img/index-background-desktop2.png"),
-    linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 300px, $color-white 300px);
+    url("../img/index-cat.png"),
+    linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 302px, $color-white 302px);
+  background-position: 50% 0;
+  background-size: auto auto;
 
   @media (min-width: $tablet-width) {
     color: $color-black;
     background-color: $color-white;
     background-image: none;
+  }
+}
+
+.selection__wrapper {
+  @media (min-width: $tablet-width) {
+    position: relative;
   }
 }
 
@@ -23,8 +32,13 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    text-align: start;
     padding-top: 60px;
     padding-bottom: 41px;
+    padding-right: 100px;
+    padding-left: 85px;
+    font-size: 60px;
+    line-height: 60px;
   }
 }
 
@@ -39,12 +53,21 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 49px;
+    padding-left: 85px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: start;
   }
 }
 
 .selection__image {
   display: block;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    height: 609px;
+  }
 }
 
 .selection__button {
@@ -53,6 +76,15 @@
   line-height: 18px;
   padding-top: 7px;
   padding-bottom: 7px;
-  padding-left: 44px;
-  padding-right: 44px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    font-size: 20px;
+    line-height: 20px;
+    max-width: 244px;
+    padding: 14px 26px;
+    top: 280px;
+    left: 115px;
+  }
 }

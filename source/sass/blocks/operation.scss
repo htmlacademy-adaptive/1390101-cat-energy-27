@@ -1,9 +1,9 @@
 .operation {
-  padding-bottom: 49px;
+  padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid $color-grey-100;
-    padding-bottom: 47px;
+    padding-bottom: 7px;
   }
 }
 
@@ -13,6 +13,11 @@
   line-height: 40px;
   padding-bottom: 40px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 10px;
+    margin-bottom: 32px;
+  }
 }
 
 .operation__list {
@@ -20,10 +25,12 @@
   padding: 0;
   margin: 0;
 
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
+    counter-reset: operation;
   }
 
   @media (min-width: $desktop-width) {
@@ -42,6 +49,23 @@
   padding-bottom: 27px;
   padding-left: 80px;
   padding-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 280px;
+    padding-top: 120px;
+    padding-left: 0;
+
+    &::after {
+      content: counter(operation);
+      position: absolute;
+      right: -10px;
+      top: 95px;
+      font-family: $font-second;
+      font-size: 280px;
+      color: $color-grey-200;
+      counter-increment: operation;
+    }
+  }
 }
 
 .operation__item--useful::before {
@@ -51,8 +75,14 @@
   background-repeat: no-repeat;
   width: 60px;
   height: 60px;
-  right: 0;
   left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: 0;
+    // иконка не увеличивается, почему? скачала меньше?
+  }
 }
 
 .operation__item--instant::before {
@@ -62,8 +92,13 @@
   background-repeat: no-repeat;
   width: 60px;
   height: 60px;
-  right: 0;
   left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: 0;
+  }
 }
 
 .operation__item--use::before {
@@ -73,8 +108,13 @@
   background-repeat: no-repeat;
   width: 60px;
   height: 60px;
-  right: 0;
   left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: 0;
+  }
 }
 
 .operation__item--changes::before {
@@ -84,6 +124,11 @@
   background-repeat: no-repeat;
   width: 60px;
   height: 60px;
-  right: 0;
   left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: 0;
+  }
 }
