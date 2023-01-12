@@ -14,16 +14,74 @@
   padding-bottom: 18px;
   margin-top: 20px;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 316px;
+    padding-left: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 61px;
+  }
 }
 
 .offer__title {
+  position: relative;
   margin: 0;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
   padding-bottom: 20px;
+  padding-top: 10px;
+  padding-left: 69px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
 }
+
+.offer__title--thin::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/cat-back.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  right: 0;
+  bottom: 10px;
+  left: 5px;
+  width: 50px;
+  height: 53px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    width: 200px;
+    height: 200px;
+    left: 400px;
+    top: 10px;
+  }
+}
+
+.offer__title--weight::before {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-image: url("../img/cat-back-big.svg");
+  right: 0;
+  bottom: 10px;
+  left: -10px;
+  width: 67px;
+  height: 50px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    width: 200px;
+    height: 200px;
+    left: 400px;
+    top: 10px;
+  }
+}
+
 
 .offer__description {
   font-family: $font-main;
@@ -37,10 +95,25 @@
 }
 
 .offer__link {
-  display: block;
+  display: flex;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  padding-top: 19px;
+  margin-top: 19px;
+}
+
+.offer__link::after {
+  content: "";
+  display: block;
+  background-image: url("../img/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: -8px;
+  width: 24px;
+  height: 12px;
+  margin-left: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 25px;
+  }
 }

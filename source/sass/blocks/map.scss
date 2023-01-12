@@ -3,13 +3,17 @@
   z-index: 0;
   background-color: $color-white;
   overflow: hidden;
-  margin-bottom: 70px;
   min-height: 400px;
 }
 
 .map__wrapper {
   padding-top: 26px;
   padding-bottom: 26px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .map__title {
@@ -39,9 +43,6 @@
 
   @media (min-width: $desktop-width) {
     width: 565px;
-    margin-top: 95px;
-    margin-left: 110px;
-    margin-bottom: 107px;
     padding-top: 59px;
     padding-left: 80px;
     padding-bottom: 56px;
@@ -50,6 +51,8 @@
 }
 
 .map__container {
+  border: none;
+
   @media (min-width: $tablet-width) {
     min-width: 100%;
   }
