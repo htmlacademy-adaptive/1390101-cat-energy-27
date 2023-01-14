@@ -87,4 +87,9 @@
     top: 280px;
     left: 115px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 250px;
+    left: 125px;
+  }
 }

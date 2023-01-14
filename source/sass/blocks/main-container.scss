@@ -2,6 +2,16 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+  padding-top: 27px;
   padding-bottom: 21px;
+  border-top: 1px solid $color-grey-300;
   border-bottom: 1px solid $color-grey-100;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+    border-top: none;
+    font-size: 60px;
+    line-height: 60px;
+    padding-bottom: 50px;
+  }
 }

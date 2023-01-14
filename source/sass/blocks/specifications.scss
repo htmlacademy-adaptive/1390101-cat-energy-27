@@ -1,4 +1,5 @@
 .specifications {
+  position: relative;
   display: grid;
   grid-template-columns: 50px max-content;
   font-family: $font-main;
@@ -6,13 +7,30 @@
   font-size: 12px;
   line-height: 16px;
   color: $color-grey-600;
+  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    justify-content: space-between;
+    font-size: 16px;
+    line-height: 16px;
+
+    .specifications::before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 250px;
+      height: 2px;
+      background-color: $color-grey-500;
+      box-shadow: 0 7px 0 0 $color-grey-500, 0 14px 0 0 $color-grey-500;
+    }
   }
-  // Почему не разьезжаются?(
 }
 
 .specifications__meaning {
   margin: 0;
+}
+
+.specifications__term {
+  padding-bottom: 9px;
 }
