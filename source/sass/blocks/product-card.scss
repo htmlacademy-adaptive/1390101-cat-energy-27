@@ -13,10 +13,12 @@
     align-items: center;
     width: 324px;
     gap: 0;
+    background-color: $color-grey-200;
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
+    border-bottom: none;
   }
 }
 
@@ -33,6 +35,10 @@
     font-size: 20px;
     line-height: 24px;
     max-width: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 21px;
   }
 }
 
