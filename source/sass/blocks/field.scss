@@ -1,18 +1,60 @@
+.field__label {
+  align-self: center;
+  margin-right: 12px;
+  color: $color-grey-600;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
 .field__input {
+  position: relative;
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 18px;
   color: $color-grey-600;
   margin: 0;
   font-family: $font-second;
+  min-height: 45px;
+  padding-left: 15px;
+  border: 1px solid $color-grey-150;
+  width: 150px;
+  flex-grow: 1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 20px;
+
+    .field__input::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 17px;
+      height: 13px;
+      background-image: url("../img/input-email.svg");
+    }
+  }
 }
+// не появилась
 
 .field__input--textarea {
   width: 100%;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 18px;
   padding-left: 19px;
   padding-top: 10px;
-  margin-bottom: 65px;
+  min-height: 150px;
+  margin-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 70px;
+    min-height: 174px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
