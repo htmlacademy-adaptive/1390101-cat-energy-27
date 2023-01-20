@@ -25,12 +25,19 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
+    z-index: 1;
   }
 }
 
 .site-list__item--active {
   @media (min-width: $tablet-width) {
     border-bottom: 2px solid $color-green-500;
+  }
+}
+
+.site-list__item--current {
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid $color-white;
   }
 }
 
@@ -47,4 +54,8 @@
   }
 }
 
-// С навигацией немного запуталась
+.site-list__link--current {
+  @media (min-width: $desktop-width) {
+    color: $color-white;
+  }
+}

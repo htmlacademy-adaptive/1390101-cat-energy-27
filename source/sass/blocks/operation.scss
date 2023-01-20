@@ -41,6 +41,38 @@
   }
 }
 
+.operation__item::before {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 60px;
+  height: 60px;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: 0;
+  }
+}
+
+.operation__item--useful::before {
+  background-image: url("../img/operation-useful.svg");
+}
+
+.operation__item--instant::before {
+  background-image: url("../img/operation-instant.svg");
+}
+
+.operation__item--use::before {
+  background-image: url("../img/operation-use.svg");
+}
+
+.operation__item--changes::before {
+  background-image: url("../img/operation-changes.svg");
+}
+
 .operation__item {
   position: relative;
   font-family: $font-main;
@@ -51,12 +83,14 @@
   padding-bottom: 27px;
   padding-left: 80px;
   padding-top: 10px;
+  margin-bottom: 2px;
 
   @media (min-width: $tablet-width) {
     min-height: 280px;
     padding-top: 120px;
     padding-left: 0;
-    order: -1;
+    font-size: 16px;
+    line-height: 18px;
 
     &::after {
       content: counter(operation);
@@ -67,75 +101,8 @@
       font-size: 280px;
       color: $color-grey-200;
       counter-increment: operation;
+      z-index: -1;
     }
   }
 }
 
-.operation__item--useful::before {
-  content: "";
-  position: absolute;
-  background-image: url("../img/operation-useful.svg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 60px;
-  height: 60px;
-  left: 0;
-
-  @media (min-width: $tablet-width) {
-    width: 80px;
-    height: 80px;
-    top: 0;
-    // иконка не увеличивается, почему? скачала меньше?
-  }
-}
-
-.operation__item--instant::before {
-  content: "";
-  position: absolute;
-  background-image: url("../img/operation-instant.svg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 60px;
-  height: 60px;
-  left: 0;
-
-  @media (min-width: $tablet-width) {
-    width: 80px;
-    height: 80px;
-    top: 0;
-  }
-}
-
-.operation__item--use::before {
-  content: "";
-  position: absolute;
-  background-image: url("../img/operation-use.svg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 60px;
-  height: 60px;
-  left: 0;
-
-  @media (min-width: $tablet-width) {
-    width: 80px;
-    height: 80px;
-    top: 0;
-  }
-}
-
-.operation__item--changes::before {
-  content: "";
-  position: absolute;
-  background-image: url("../img/operation-changes.svg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 60px;
-  height: 60px;
-  left: 0;
-
-  @media (min-width: $tablet-width) {
-    width: 80px;
-    height: 80px;
-    top: 0;
-  }
-}

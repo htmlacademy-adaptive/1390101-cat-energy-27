@@ -31,7 +31,7 @@
   }
 }
 
-.radio__input[type="radio"]:checked + .radio__control-mark::before {
+.radio__input[type="radio"]:checked + .radio__control-label::before {
   content: "";
   position: absolute;
   width: 13px;

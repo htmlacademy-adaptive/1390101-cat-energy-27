@@ -29,18 +29,17 @@
     line-height: 30px;
     padding-left: 20px;
 
-    .field__input::after {
+    &::after {
       content: "";
       position: absolute;
       top: 0;
       left: 0;
       width: 17px;
       height: 13px;
-      background-image: url("../img/input-email.svg");
+      background-image: url("./img/input-email.svg");
     }
   }
 }
-// не появилась
 
 .field__input--textarea {
   width: 100%;

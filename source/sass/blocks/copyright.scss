@@ -1,11 +1,9 @@
 .copyright {
-  display: flex;
-
   @media (min-width: $tablet-width) {
+    display: flex;
     justify-content: flex-end;
   }
 }
-// блииин
 
 .copyright__link {
   display: flex;

@@ -22,7 +22,7 @@
   position: absolute;
 }
 
-.checkbox__input[type="checkbox"]:checked + .checkbox__control-mark {
+.checkbox__input:checked + .checkbox__control-mark {
   background-image: url("../img/checked.svg");
 }
 
