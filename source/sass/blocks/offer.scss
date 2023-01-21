@@ -14,15 +14,103 @@
   padding-bottom: 18px;
   margin-top: 20px;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 360px;
+    padding-left: 52px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 61px;
+  }
 }
 
 .offer__title {
+  position: relative;
   margin: 0;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
   padding-bottom: 20px;
+  padding-top: 10px;
+  padding-left: 69px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-top: 27px;
+    padding-bottom: 24px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 162px;
+    padding-bottom: 73px;
+  }
+}
+
+.offer__title--thin::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/cat-back.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  right: 0;
+  bottom: 10px;
+  left: 5px;
+  width: 50px;
+  height: 53px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    width: 200px;
+    height: 211px;
+    left: auto;
+    top: 10px;
+    right: -300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 106px;
+    right: auto;
+    left: 0;
+    top: 0;
+  }
+}
+
+.offer__title--weight::before {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-image: url("../img/cat-back-big.svg");
+  background-size: 100%;
+  right: 0;
+  bottom: 10px;
+  left: -10px;
+  width: 67px;
+  height: 50px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    width: 268px;
+    height: 200px;
+    top: 30px;
+    left: auto;
+    right: -330px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 106px;
+    right: auto;
+    left: 0;
+    top: 0;
+  }
 }
 
 .offer__description {
@@ -34,13 +122,40 @@
   margin: 0;
   padding-bottom: 23px;
   border-bottom: 1px solid $color-grey-300;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .offer__link {
-  display: block;
+  display: flex;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  padding-top: 19px;
+  margin-top: 19px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.offer__link::after {
+  content: "";
+  display: block;
+  background-image: url("../img/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: -8px;
+  width: 24px;
+  height: 12px;
+  margin-left: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 25px;
+    margin-top: 10px;
+  }
 }

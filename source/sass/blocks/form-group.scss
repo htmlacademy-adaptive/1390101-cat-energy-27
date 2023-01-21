@@ -1,8 +1,20 @@
+.form-group__inner {
+  display: flex;
+}
+
 .form-group__field {
   font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 18px;
   text-transform: uppercase;
+  margin-right: 8px;
+  align-self: center;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form-group__title {
@@ -11,14 +23,70 @@
   line-height: 26px;
   color: $color-black;
   text-transform: none;
+  padding-bottom: 25px;
+  margin-bottom: 5px;
+  background-color: $color-white;
+  padding-right: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-bottom: 70px;
+    padding-left: 39px;
+    padding-right: 42px;
+  }
 }
 
 .form-group--contacts {
+  position: relative;
   color: $color-grey-600;
+  margin-top: 26px;
+  padding-bottom: 19px;
+  border-bottom: 1px solid $color-grey-300;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
+  }
+}
+
+.form-group--contacts::before {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  background-color: $color-green-500;
+  height: 2px;
+  align-self: center;
+  top: -45px;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    top: -85px;
+    left: -45px;
+  }
+}
+
+.form-group__field--comment {
+  position: relative;
+}
+
+.form-group__field--comment::before {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  background-color: $color-green-500;
+  height: 2px;
+  align-self: center;
+  top: 15px;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    top: 15px;
+    left: -45px;
   }
 }

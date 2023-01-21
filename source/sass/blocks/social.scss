@@ -1,3 +1,15 @@
+.social {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $color-grey-300;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
+
 .social__list {
   display: flex;
   justify-content: center;
@@ -6,9 +18,16 @@
   padding: 0;
 }
 
+.social__item {
+  margin: 5px;
+}
+
 .social__link {
+  display: block;
   width: 30px;
   height: 30px;
+  padding: 5px;
+  margin: 5px;
 }
 
 .social__link-icon {

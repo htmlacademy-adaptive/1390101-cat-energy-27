@@ -1,9 +1,25 @@
+.operation {
+  padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $color-grey-100;
+    padding-bottom: 7px;
+  }
+}
+
 .operation__title {
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   padding-bottom: 40px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 10px;
+    margin-bottom: 32px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .operation__list {
@@ -11,10 +27,12 @@
   padding: 0;
   margin: 0;
 
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
+    counter-reset: operation;
   }
 
   @media (min-width: $desktop-width) {
@@ -23,11 +41,68 @@
   }
 }
 
+.operation__item::before {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 60px;
+  height: 60px;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: 0;
+  }
+}
+
+.operation__item--useful::before {
+  background-image: url("../img/operation-useful.svg");
+}
+
+.operation__item--instant::before {
+  background-image: url("../img/operation-instant.svg");
+}
+
+.operation__item--use::before {
+  background-image: url("../img/operation-use.svg");
+}
+
+.operation__item--changes::before {
+  background-image: url("../img/operation-changes.svg");
+}
+
 .operation__item {
+  position: relative;
   font-family: $font-main;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: $color-grey-600;
   padding-bottom: 27px;
+  padding-left: 80px;
+  padding-top: 10px;
+  margin-bottom: 2px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 280px;
+    padding-top: 120px;
+    padding-left: 0;
+    font-size: 16px;
+    line-height: 18px;
+
+    &::after {
+      content: counter(operation);
+      position: absolute;
+      right: -10px;
+      top: 95px;
+      font-family: $font-second;
+      font-size: 280px;
+      color: $color-grey-200;
+      counter-increment: operation;
+      z-index: -1;
+    }
+  }
 }
+

@@ -1,6 +1,37 @@
 .selection {
+  position: relative;
   color: $color-white;
-  background-color: $color-green-500;
+  background-color: rgba(104, 183, 56, 0.85);
+  background-repeat: no-repeat;
+  background-image:
+    url("../img/index-cat.png"),
+    linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 302px, $color-white 302px);
+  background-position: 50% 0;
+  background-size: 100%;
+
+  @media (min-width: $tablet-width) {
+    color: $color-black;
+    background-color: $color-white;
+    background-image: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/index-background-desktop.png");
+      top: -100px;
+      right: -30px;
+      width: 720px;
+      height: 694px;
+    }
+  }
+}
+
+.selection__wrapper {
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
 }
 
 .selection__title {
@@ -8,6 +39,23 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+  padding-top: 27px;
+  padding-bottom: 25px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: start;
+    padding-top: 60px;
+    padding-bottom: 41px;
+    padding-right: 100px;
+    padding-left: 85px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: calc(65% - 60px);
+  }
 }
 
 .selection__description {
@@ -16,6 +64,34 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 49px;
+    padding-left: 85px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: start;
+  }
+}
+
+.selection__image {
+  display: block;
+  margin: 25px auto;
+
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    height: 609px;
+    margin-top: -30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    height: auto;
+    margin-top: -250px;
+    margin-right: 250px;
+  }
 }
 
 .selection__button {
@@ -24,6 +100,20 @@
   line-height: 18px;
   padding-top: 7px;
   padding-bottom: 7px;
-  padding-left: 44px;
-  padding-right: 44px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    font-size: 20px;
+    line-height: 20px;
+    max-width: 244px;
+    padding: 14px 26px;
+    top: 280px;
+    left: 115px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 290px;
+    left: 125px;
+  }
 }

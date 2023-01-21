@@ -1,6 +1,7 @@
 .specifications {
+  position: relative;
   display: grid;
-  grid-template-columns: 50px max-content;
+  grid-template-columns: 1fr 1fr;
   font-family: $font-main;
   font-weight: 400;
   font-size: 12px;
@@ -8,11 +9,27 @@
   color: $color-grey-600;
 
   @media (min-width: $tablet-width) {
-    justify-content: space-between;
+    font-size: 16px;
+    line-height: 16px;
+    padding-bottom: 33px;
   }
-  // Почему не разьезжаются?(
 }
 
 .specifications__meaning {
   margin: 0;
+  text-align: end;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 7px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid $color-grey-500;
+  }
+}
+
+.specifications__term {
+  @media (min-width: $tablet-width) {
+    padding-top: 7px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid $color-grey-500;
+  }
 }
