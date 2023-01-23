@@ -20,12 +20,15 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 82px;
+
     &::before {
       content: "";
       position: absolute;
       background-image: url("../img/index-background-desktop.png");
-      top: -100px;
-      right: -30px;
+      background-size: cover;
+      top: -120px;
+      right: -50px;
       width: 720px;
       height: 694px;
 
@@ -96,7 +99,7 @@
 
   @media (min-width: $desktop-width) {
     width: 552px;
-    height: auto;
+    height: 499px;
     margin-top: -250px;
     margin-right: 250px;
   }

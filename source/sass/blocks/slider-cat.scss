@@ -21,10 +21,22 @@
   img {
     max-width: none;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
 }
 
 .slider-cat__images--next {
   justify-content: end;
+}
+
+.slider-cat__image {
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
 }
 
 .slider-cat__range {
@@ -45,4 +57,8 @@
   height: 40px;
   top: 108px;
   left: -18px;
+
+  @media (min-width: $tablet-width) {
+    top: 236px;
+  }
 }

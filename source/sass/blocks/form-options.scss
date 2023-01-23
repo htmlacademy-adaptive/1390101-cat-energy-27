@@ -15,7 +15,7 @@
 
   @media (min-width: $tablet-width) {
     top: -70px;
-    left: -45px;
+    left: calc(50% - 50vw);
   }
 }
 

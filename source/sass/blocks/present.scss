@@ -2,6 +2,7 @@
   position: relative;
   background-image: url("../img/background-cat-catalog.png");
   background-repeat: no-repeat;
+  background-size: cover;
   font-family: $font-main;
   font-weight: 400;
   font-size: 16px;
@@ -22,7 +23,7 @@
     min-height: 200px;
     padding-top: 71px;
     padding-left: 422px;
-    background-size: 100%;
+    background-size: cover;
     background-image: url("../img/background-cat-catalog-tablet.png");
 
     @media (min-resolution: 2dppx) {
@@ -37,7 +38,7 @@
     min-height: 289px;
     margin-bottom: 86px;
     background-image: url("../img/background-cat-catalog-desktop.png");
-    background-size: 100% auto;
+    background-size: cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background-cat-catalog-desktop@2x.png");

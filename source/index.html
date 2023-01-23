@@ -53,8 +53,8 @@
           Занялся собой? Займись котом!
         </p>
         <picture>
-          <source media="(min-width:1300px)" srcset="./img/index-can-desktop.png, /img/index-can-desktop@2.png 2x">
-          <source media="(min-width:768px)" srcset="./img/index-can-tablet.png, /img/index-can-tablet@2.png 2x">
+          <source media="(min-width:1300px)" srcset="./img/index-can-desktop.png, ./img/index-can-desktop@2x.png 2x">
+          <source media="(min-width:768px)" srcset="./img/index-can-tablet.png, ./img/index-can-tablet@2x.png 2x">
           <img class="selection__image" src="./img/index-can-mobile.png" width="280" height="270"
             srcset="img/index-can-mobile@2x.png" alt="Пример питания для котов Кэт Энерджи Про с курицей 500 грамм">
         </picture>
@@ -141,17 +141,21 @@
             <div class="slider-cat__images slider-cat__images--previous">
               <picture>
                 <source media="(min-width:768px)"
-                  srcset="./img/cat-slider-big-tablet@1x.png, img/cat-slider-big-tablet@2x.png 2x">
-                <img src="./img/cat-slider-big.png" width="280" height="256" srcset="./img/cat-slider-big@2x.png 2x"
-                  alt="Изображение кота до изменений">
+                  srcset="./img/cat-slider-big-tablet@1x.png, ./img/cat-slider-big-tablet@2x.png 2x">
+                <img class="slider-cat__image" src="./img/cat-slider-big.png" width="280" height="256"
+                  srcset="./img/cat-slider-big@2x.png 2x" alt="Изображение кота до изменений">
               </picture>
             </div>
             <button class="slider-cat__range" type="button">
               <span class="visually-hidden">Кнопка переключения</span>
             </button>
             <div class="slider-cat__images slider-cat__images--next">
-              <img src="./img/cat-slider-small.png" width="280" height="256" srcset="./img/cat-slider-small@2x.png 2x"
-                alt="Изображение кота после питания Кэт Энерджи">
+              <picture>
+                <source media="(min-width:768px)"
+                  srcset="./img/cat-slider-small-tablet.png, ./img/cat-clider-small-tablet@2x.png 2x">
+                <img class="slider-cat__image" src="./img/cat-slider-small.png" width="280" height="256"
+                  srcset="./img/cat-slider-small@2x.png 2x" alt="Изображение кота после питания Кэт Энерджи">
+              </picture>
             </div>
           </div>
         </div>
