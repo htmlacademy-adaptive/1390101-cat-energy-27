@@ -21,11 +21,6 @@
   img {
     max-width: none;
   }
-
-  @media (min-width: $tablet-width) {
-    width: 560px;
-    height: 512px;
-  }
 }
 
 .slider-cat__images--next {
