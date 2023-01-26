@@ -150,7 +150,7 @@
   background-image: url("../img/arrow.svg");
   background-repeat: no-repeat;
   background-position: -8px;
-  width: 24px;
+  width: 32px;
   height: 12px;
   margin-left: 15px;
 
@@ -158,4 +158,12 @@
     margin-left: 25px;
     margin-top: 10px;
   }
+}
+
+.offer__link:hover::after {
+  background-position: 0 0;
+}
+
+.offer__link:active {
+  opacity: 0.3;
 }

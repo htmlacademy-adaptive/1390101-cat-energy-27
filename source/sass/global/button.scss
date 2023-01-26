@@ -12,3 +12,7 @@
 .button:hover {
   background-color: $color-green-700;
 }
+
+.button:active {
+  color: $color-white 0.3;
+}
