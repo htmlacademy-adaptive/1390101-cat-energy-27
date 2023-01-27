@@ -53,10 +53,16 @@
           Занялся собой? Займись котом!
         </p>
         <picture>
+          <source type="image/webp" media="(min-width: 1300px)"
+            srcset="./img/index-can-desktop.webp 1x, ./img/index-can-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="./img/index-can-tablet.webp 1x, ./img/index-can-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="./img/index-can-mobile.webp 1x, ./img/index-can-mobile@2x.webp 2x">
           <source media="(min-width:1300px)" srcset="./img/index-can-desktop.png, ./img/index-can-desktop@2x.png 2x">
           <source media="(min-width:768px)" srcset="./img/index-can-tablet.png, ./img/index-can-tablet@2x.png 2x">
           <img class="selection__image" src="./img/index-can-mobile.png" width="280" height="270"
-            srcset="img/index-can-mobile@2x.png" alt="Пример питания для котов Кэт Энерджи Про с курицей 500 грамм">
+            srcset="./img/index-can-mobile@2x.png 2x"
+            alt="Пример питания для котов Кэт Энерджи Про с курицей 500 грамм">
         </picture>
         <a class="selection__button button" href="form.html">Подобрать программу</a>
       </div>
@@ -140,6 +146,9 @@
           <div class="slider-cat__wrapper">
             <div class="slider-cat__images slider-cat__images--previous">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="./img/cat-slider-big-tablet@1x.webp 1x, ./img/cat-slider-big-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/cat-slider-big.webp 1x, ./img/cat-slider-big@2x.webp 2x">
                 <source media="(min-width:768px)"
                   srcset="./img/cat-slider-big-tablet@1x.png, ./img/cat-slider-big-tablet@2x.png 2x">
                 <img class="slider-cat__image" src="./img/cat-slider-big.png" width="280" height="256"
@@ -151,6 +160,9 @@
             </button>
             <div class="slider-cat__images slider-cat__images--next">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="./img/cat-slider-small-tablet.webp 1x, ./img/cat-slider-small-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/cat-slider-small.webp 1x, ./img/cat-slider-small@2x.webp 2x">
                 <source media="(min-width:768px)"
                   srcset="./img/cat-slider-small-tablet.png, ./img/cat-slider-small-tablet@2x.png 2x">
                 <img class="slider-cat__image" src="./img/cat-slider-small.png" width="280" height="256"
