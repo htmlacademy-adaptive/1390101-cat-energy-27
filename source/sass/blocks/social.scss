@@ -30,6 +30,14 @@
   margin: 5px;
 }
 
+.social__link:hover {
+  color: $color-green-500;
+}
+
+.social__link:active {
+  opacity: 0.3;
+}
+
 .social__link-icon {
   width: 28px;
   height: 22px;

@@ -48,6 +48,11 @@
   background-color: $color-green-500;
 }
 
+.slider-cat__range:active {
+  background-color: $color-green-700;
+  opacity: 0.6;
+}
+
 .slider-cat__handle {
   position: absolute;
   display: grid;
@@ -69,4 +74,10 @@
 .slider-cat__range:hover .slider-cat__handle {
   color: $color-green-500;
   border-color: $color-green-500;
+}
+
+.slider-cat__range:active .slider-cat__handle {
+  color: $color-green-700;
+  border-color: $color-green-700;
+  opacity: 0.6;
 }

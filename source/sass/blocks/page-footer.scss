@@ -29,3 +29,16 @@
     justify-content: left;
   }
 }
+
+.page-footer__logo-image {
+  color: $color-grey-900;
+}
+
+.page-footer__logo-image:active {
+  color: $color-grey-650;
+}
+
+.page-footer__logo-image:focus {
+  color: $color-grey-900;
+}
+

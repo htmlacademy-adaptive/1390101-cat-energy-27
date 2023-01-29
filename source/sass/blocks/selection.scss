@@ -25,12 +25,16 @@
     &::before {
       content: "";
       position: absolute;
+      display: block;
       background-image: url("../img/index-background-desktop.png");
-      background-size: cover;
+      background-size: contain;
       top: -120px;
-      right: -50px;
-      width: 720px;
+      right: 0;
       height: 694px;
+      left: 50%;
+      background-color: $color-green-600;
+      background-repeat: no-repeat;
+      background-position: 100% 0;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/index-background-desktop@2x.png");
