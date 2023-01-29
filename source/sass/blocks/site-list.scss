@@ -29,7 +29,7 @@
   }
 }
 
-.site-list__item:hover {
+.site-list__item:not(.site-list__item--active):hover {
   opacity: 0.6;
 }
 

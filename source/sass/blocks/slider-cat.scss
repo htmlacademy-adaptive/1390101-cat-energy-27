@@ -44,16 +44,29 @@
   justify-self: center;
 }
 
-.slider-cat__range::after {
-  content: "";
+.slider-cat__range:hover {
+  background-color: $color-green-500;
+}
+
+.slider-cat__handle {
   position: absolute;
-  background-image: url("../img/slider.svg");
+  display: grid;
+  place-content: center;
   width: 40px;
   height: 40px;
   top: 108px;
   left: -18px;
+  color: $color-grey-800;
+  background-color: $color-white;
+  border: 2px solid $color-grey-800;
+  border-radius: 50%;
 
   @media (min-width: $tablet-width) {
     top: 236px;
   }
+}
+
+.slider-cat__range:hover .slider-cat__handle {
+  color: $color-green-500;
+  border-color: $color-green-500;
 }

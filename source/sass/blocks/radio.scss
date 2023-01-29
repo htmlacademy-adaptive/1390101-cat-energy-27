@@ -23,7 +23,11 @@
   border: 1px solid $color-grey-550;
 }
 
-.radio:active::before {
+.radio__input:focus + .radio__control-label {
+  outline: 2px solid $color-grey-600;
+}
+
+.radio__input:disabled + .radio__control-label {
   opacity: 0.3;
 }
 
@@ -44,7 +48,7 @@
   }
 }
 
-.radio__input[type="radio"]:checked + .radio__control-label::before {
+.radio__input:checked + .radio__control-label::before {
   content: "";
   position: absolute;
   width: 13px;

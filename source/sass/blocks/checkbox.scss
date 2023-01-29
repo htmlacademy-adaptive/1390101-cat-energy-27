@@ -24,13 +24,6 @@
 
 .checkbox__input:checked + .checkbox__control-mark {
   background-image: url("../img/checked.svg");
-  width: 18px;
-  height: 14px;
-
-  @media (min-width: $tablet-width) {
-    width: 24px;
-    height: 19px;
-  }
 }
 
 .checkbox__control-mark {
@@ -51,7 +44,11 @@
   border: 1px solid $color-grey-550;
 }
 
-.checkbox__control-mark:active {
+.checkbox__input:focus + .checkbox__control-mark {
+  outline: 2px solid $color-grey-600;
+}
+
+.checkbox__input:disabled + .checkbox__control-mark {
   opacity: 0.3;
 }
 
@@ -64,8 +61,4 @@
     font-size: 20px;
     line-height: 30px;
   }
-}
-
-.checkbox__control-label:active {
-  opacity: 0.3;
 }

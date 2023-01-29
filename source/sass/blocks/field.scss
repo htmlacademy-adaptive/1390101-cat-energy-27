@@ -46,12 +46,14 @@
   border: 1px solid $color-grey-500;
 }
 
-.field__input:active {
-  border: 2px solid $color-grey-600;
+.field__input:focus {
+  outline: 2px solid $color-grey-600;
+  outline-offset: -2px;
 }
 
-.field__input:invalid {
-  border: 2px solid $color-red-700;
+.field__input--invalid {
+  outline: 2px solid $color-red-700;
+  outline-offset: -2px;
 }
 
 .field__input--textarea {
