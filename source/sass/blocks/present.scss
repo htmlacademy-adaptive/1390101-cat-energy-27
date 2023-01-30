@@ -35,9 +35,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 0;
+    text-align: center;
+    padding-left: 40px;
     padding-top: 184px;
-    padding-right: 0;
+    padding-right: 40px;
     min-height: 289px;
     margin-bottom: 86px;
     background-image: url("../img/background-cat-catalog-desktop.png");
