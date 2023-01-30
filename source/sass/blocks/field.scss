@@ -1,3 +1,7 @@
+.field {
+  position: relative;
+}
+
 .field__label {
   align-self: center;
   margin-right: 12px;
@@ -40,6 +44,21 @@
       background-image: url("./img/input-email.svg");
     }
   }
+}
+
+.field__icon {
+  position: absolute;
+  top: calc(50% - 10px);
+  right: 12px;
+  color: $color-black;
+}
+
+.field:hover .field__icon {
+  color: $color-grey-700;
+}
+
+.field:focus-within .field__icon {
+  color: $color-green-500;
 }
 
 .field__input:hover {

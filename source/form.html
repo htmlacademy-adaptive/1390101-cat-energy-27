@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="preload" href="css/style.css" as="style" crossorigin="anonymous">
-  <link rel="preload" href="img/index-cat@2x.png" as="image" crossorigin="anonymous">
-  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lato/lato-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -22,10 +22,10 @@
       </picture>
       <img class="main-header__img-2" src="./img/logo-header.svg" width="101" height="18" alt="" aria-hidden="true">
     </a>
-    <button class="main-header__toggle main-header__toggle--closed" type="button">
+    <button class="main-header__toggle main-header__toggle--closed main-header__toggle--nojs" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
-    <nav class="main-nav main-nav--opened main-nav--nojs">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
           <a class="site-list__link" href="index.html">
@@ -51,14 +51,14 @@
       Подбор программы
     </h1>
 
-    <section class="form container">
+    <section class="form">
       <h2 class="visually-hidden">
         Анкета
       </h2>
-      <p class="form__description">
+      <p class="form__description container">
         Заполните анкету, и мы подберем программу питания для вашего кота
       </p>
-      <form class="form__page order-form" action="https://echo.htmlacademy.ru/" method="post">
+      <form class="form__page order-form container" action="https://echo.htmlacademy.ru/" method="post">
         <div class="order-form__group-inner">
           <fieldset class="order-form__group form-group form-group--questionary">
             <legend class="visually-hidden">Данные кота</legend>
@@ -116,7 +116,7 @@
             <label class="form-group__field field__label" for="contact__email">E-mail:*</label>
             <input class="field__input field__input--icon" placeholder="kuklachev@gmail.com" type="email" name="contact__email"
               id="contact__email" required>
-            <svg width="20" height="20">
+            <svg class="field__icon" width="20" height="20">
               <use href="img/sprite.svg#email"></use>
             </svg>
           </p>
@@ -124,7 +124,7 @@
             <label class="form-group__field field__label" for="contact__phone">Телефон:*</label>
             <input class="field__input field__input--icon" placeholder="8 (960) 900-60-90" type="tel" name="contact__phone"
               id="contact__phone" required>
-            <svg width="20" height="20">
+            <svg class="field__icon" width="20" height="20">
               <use href="img/sprite.svg#phone"></use>
             </svg>
           </p>
@@ -182,8 +182,8 @@
     <section class="map">
       <div class="map__wrapper container">
         <div class="map__box">
-          <h2 class="map__title">приглашаем к сотрудничеству дилеров!</h2>
-          <p class="map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <h2 class="map__title">приглашаем к&nbsp;сотрудничеству дилеров!</h2>
+          <p class="map__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
         </div>
       </div>
       <iframe class="map__container"

@@ -12,6 +12,13 @@
   @media (min-width: $tablet-width) {
     width: 560px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 50px;
+    justify-self: end;
+    margin-top: 12px;
+  }
+
 }
 
 .slider-cat__images {

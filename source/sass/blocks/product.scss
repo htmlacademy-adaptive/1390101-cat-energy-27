@@ -4,10 +4,11 @@
   list-style: none;
   padding: 0;
   display: grid;
-  gap: 80px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 68px;
   }
 
   @media (min-width: $desktop-width) {
@@ -18,8 +19,8 @@
 .product__reloading {
   display: block;
   text-align: center;
-  padding-top: 78px;
-  padding-bottom: 35px;
+  padding-top: 64px;
+  padding-bottom: 17px;
   margin-top: 10px;
   background-image: url("../img/plus.svg");
   background-repeat: no-repeat;
@@ -29,7 +30,7 @@
 
   @media (min-width: $tablet-width) {
     background-size: 60px 60px;
-    background-position: 50% 20%;
+    background-position: 50% 52px;
     display: grid;
     align-items: end;
     padding-top: 0;
@@ -37,6 +38,7 @@
     padding-bottom: 39px;
     padding-left: 39px;
     border: 2px solid $color-grey-200;
+    margin-top: 74px;
   }
 }
 
@@ -52,10 +54,10 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 22px;
-    padding-top: 161px;
+    padding-top: 140px;
     padding-left: 50px;
     padding-right: 50px;
-    padding-bottom: 23px;
+    padding-bottom: 5px;
   }
 }
 
