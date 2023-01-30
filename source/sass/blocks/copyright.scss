@@ -19,6 +19,10 @@
   }
 }
 
+.copyright__link:active {
+  opacity: 0.3;
+}
+
 .copyright__text {
   margin: 0;
   font-family: $font-main;
@@ -26,8 +30,17 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
+  align-self: center;
 
   @media (min-width: $tablet-width) {
     margin-right: 27px;
   }
+}
+
+.copyright__image {
+  color: $color-grey-800;
+}
+
+.copyright__image:hover {
+  color: $color-green-500;
 }

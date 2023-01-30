@@ -25,12 +25,16 @@
     &::before {
       content: "";
       position: absolute;
+      display: block;
       background-image: url("../img/index-background-desktop.png");
-      background-size: cover;
+      background-size: contain;
       top: -120px;
-      right: -50px;
-      width: 720px;
+      right: 0;
       height: 694px;
+      left: 50%;
+      background-color: $color-green-600;
+      background-repeat: no-repeat;
+      background-position: 100% 0;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/index-background-desktop@2x.png");
@@ -50,22 +54,24 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  padding-top: 27px;
+  padding-top: 25px;
   padding-bottom: 25px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     text-align: start;
-    padding-top: 60px;
+    padding-top: 55px;
     padding-bottom: 41px;
     padding-right: 100px;
-    padding-left: 85px;
+    padding-left: 88px;
     font-size: 60px;
     line-height: 60px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: calc(65% - 60px);
+    padding-top: 105px;
+    padding-left: 80px;
   }
 }
 
@@ -80,28 +86,32 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 49px;
-    padding-left: 85px;
+    padding-left: 90px;
     font-size: 20px;
     line-height: 20px;
     text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
   }
 }
 
 .selection__image {
   display: block;
-  margin: 25px auto;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 709px;
     height: 609px;
-    margin-top: -30px;
+    margin-top: -28px;
   }
 
   @media (min-width: $desktop-width) {
     width: 552px;
     height: 499px;
-    margin-top: -250px;
-    margin-right: 250px;
+    margin-top: -311px;
+    margin-right: 219px;
   }
 }
 
@@ -109,9 +119,10 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-top: 9px;
+  padding-bottom: 10px;
   width: 100%;
+  margin-top: 4px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -119,12 +130,14 @@
     line-height: 20px;
     max-width: 244px;
     padding: 14px 26px;
-    top: 280px;
-    left: 115px;
+    top: 285px;
+    left: 121px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 290px;
-    left: 125px;
+    top: 334px;
+    left: 120px;
+    padding-top: 16px;
+    padding-bottom: 17px;
   }
 }

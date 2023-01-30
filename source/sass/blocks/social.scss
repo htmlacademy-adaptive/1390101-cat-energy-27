@@ -1,6 +1,6 @@
 .social {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 6px;
   border-bottom: 1px solid $color-grey-300;
 
   @media (min-width: $tablet-width) {
@@ -28,6 +28,14 @@
   height: 30px;
   padding: 5px;
   margin: 5px;
+}
+
+.social__link:hover {
+  color: $color-green-500;
+}
+
+.social__link:active {
+  opacity: 0.3;
 }
 
 .social__link-icon {

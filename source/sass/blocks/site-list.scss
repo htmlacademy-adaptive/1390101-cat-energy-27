@@ -11,7 +11,7 @@
   border-top: 1px solid $color-grey-100;
 
   @media (min-width: $tablet-width) {
-    margin-right: 10px;
+    margin-right: 24px;
 
     &:last-child {
       margin-right: 0;
@@ -29,6 +29,15 @@
   }
 }
 
+.site-list__item:not(.site-list__item--active):hover {
+  opacity: 0.6;
+}
+
+.site-list__item:active {
+  opacity: 0.3;
+}
+
+
 .site-list__item--active {
   @media (min-width: $tablet-width) {
     border-bottom: 2px solid $color-green-500;
@@ -43,7 +52,7 @@
 
 .site-list__link {
   display: block;
-  padding-top: 22px;
+  padding-top: 21px;
   padding-bottom: 24px;
 
   @media (min-width: $tablet-width) {

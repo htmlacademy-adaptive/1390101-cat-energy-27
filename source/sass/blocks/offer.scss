@@ -8,7 +8,7 @@
 
 .offer__inner {
   background-color: $color-grey-200;
-  padding-top: 21px;
+  padding-top: 27px;
   padding-left: 22px;
   padding-right: 33px;
   padding-bottom: 18px;
@@ -16,14 +16,18 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    padding-right: 360px;
+    padding-right: 322px;
     padding-left: 52px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 62px;
+    padding-bottom: 57px;
+    margin-top: 0;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
     padding-right: 61px;
+    margin-top: 53px;
+    padding-bottom: 58px;
   }
 }
 
@@ -34,13 +38,13 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
-  padding-bottom: 20px;
-  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-top: 3px;
   padding-left: 69px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 0;
-    padding-top: 27px;
+    padding-left: 1px;
+    padding-top: 15px;
     padding-bottom: 24px;
     font-size: 36px;
     line-height: 36px;
@@ -60,8 +64,8 @@
   background-position: center;
   background-size: 100%;
   right: 0;
-  bottom: 10px;
-  left: 5px;
+  bottom: 22px;
+  left: 0;
   width: 50px;
   height: 53px;
 
@@ -70,8 +74,8 @@
     width: 200px;
     height: 211px;
     left: auto;
-    top: 10px;
-    right: -300px;
+    top: 18px;
+    right: -260px;
   }
 
   @media (min-width: $desktop-width) {
@@ -79,7 +83,7 @@
     height: 106px;
     right: auto;
     left: 0;
-    top: 0;
+    top: -21px;
   }
 }
 
@@ -90,8 +94,8 @@
   background-image: url("../img/cat-back-big.svg");
   background-size: 100%;
   right: 0;
-  bottom: 10px;
-  left: -10px;
+  bottom: 21px;
+  left: -8px;
   width: 67px;
   height: 50px;
 
@@ -99,17 +103,17 @@
     padding-left: 0;
     width: 268px;
     height: 200px;
-    top: 30px;
+    top: 27px;
     left: auto;
-    right: -330px;
+    right: -294px;
   }
 
   @media (min-width: $desktop-width) {
     width: 134px;
     height: 106px;
     right: auto;
-    left: 0;
-    top: 0;
+    left: -19px;
+    top: -16px;
   }
 }
 
@@ -128,6 +132,10 @@
     font-size: 16px;
     line-height: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 18px;
+  }
 }
 
 .offer__link {
@@ -136,11 +144,16 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  margin-top: 19px;
+  margin-top: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    margin-top: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 10px;
   }
 }
 
@@ -150,7 +163,7 @@
   background-image: url("../img/arrow.svg");
   background-repeat: no-repeat;
   background-position: -8px;
-  width: 24px;
+  width: 32px;
   height: 12px;
   margin-left: 15px;
 
@@ -158,4 +171,12 @@
     margin-left: 25px;
     margin-top: 10px;
   }
+}
+
+.offer__link:hover::after {
+  background-position: 0 0;
+}
+
+.offer__link:active {
+  opacity: 0.3;
 }

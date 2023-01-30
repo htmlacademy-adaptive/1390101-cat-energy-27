@@ -40,6 +40,18 @@
   }
 }
 
+.checkbox__control-mark:hover {
+  border: 1px solid $color-grey-550;
+}
+
+.checkbox__input:focus + .checkbox__control-mark {
+  outline: 2px solid $color-grey-600;
+}
+
+.checkbox__input:disabled + .checkbox__control-mark {
+  opacity: 0.3;
+}
+
 .checkbox__control-label {
   margin-left: 16px;
   font-size: 16px;

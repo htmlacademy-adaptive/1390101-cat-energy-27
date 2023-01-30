@@ -1,9 +1,13 @@
 .operation {
-  padding-bottom: 22px;
+  padding-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid $color-grey-100;
-    padding-bottom: 7px;
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: none;
   }
 }
 
@@ -11,14 +15,21 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 32px;
   margin: 0;
+  padding-top: 3px;
+  padding-left: 2px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 12px;
     padding-bottom: 10px;
     margin-bottom: 32px;
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 41px;
   }
 }
 
@@ -31,13 +42,14 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    column-gap: 58px;
+    row-gap: 35px;
     counter-reset: operation;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 80px;
+    column-gap: 45px;
   }
 }
 
@@ -53,7 +65,7 @@
   @media (min-width: $tablet-width) {
     width: 80px;
     height: 80px;
-    top: 0;
+    top: 31px;
   }
 }
 
@@ -82,26 +94,34 @@
   color: $color-grey-600;
   padding-bottom: 27px;
   padding-left: 80px;
-  padding-top: 10px;
-  margin-bottom: 2px;
+  padding-top: 11px;
+  margin-bottom: -12px;
 
   @media (min-width: $tablet-width) {
     min-height: 280px;
-    padding-top: 120px;
+    padding-top: 143px;
     padding-left: 0;
     font-size: 16px;
-    line-height: 18px;
+    line-height: 24px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    max-width: 245px;
 
     &::after {
       content: counter(operation);
       position: absolute;
       right: -10px;
-      top: 95px;
+      top: 119px;
       font-family: $font-second;
       font-size: 280px;
       color: $color-grey-200;
       counter-increment: operation;
       z-index: -1;
+      width: 136px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 144px;
   }
 }
