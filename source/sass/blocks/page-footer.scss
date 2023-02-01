@@ -9,9 +9,13 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding-top: 50px;
+    padding-top: 48px;
     padding-bottom: 50px;
     align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 58px;
   }
 }
 
@@ -30,11 +34,18 @@
   }
 }
 
+.page-footer__logo-link {
+  @media (min-width: $tablet-width) {
+    width: 143px;
+    height: 46px;
+  }
+}
+
 .page-footer__logo-image {
   color: $color-grey-900;
 
   @media (min-width: $tablet-width) {
-    width: 143px;
+    max-width: 100%;
   }
 }
 

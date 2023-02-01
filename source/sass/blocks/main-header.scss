@@ -26,7 +26,7 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 11px;
-  padding-bottom: 13px;
+  padding-bottom: 11px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 72px 1fr;
@@ -104,6 +104,9 @@
 
   @media (min-width: $desktop-width) {
     margin-right: 0;
+    margin-left: 14px;
+    width: 118px;
+    height: 22px;
   }
 }
 
