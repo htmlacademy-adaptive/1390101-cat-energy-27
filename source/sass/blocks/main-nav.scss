@@ -16,10 +16,6 @@
     display: flex;
     justify-content: flex-end;
   }
-
-  @media (min-width: $desktop-width) {
-    margin-right: 10px;
-  }
 }
 
 .main-nav--opened .main-nav__list {

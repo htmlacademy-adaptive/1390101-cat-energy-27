@@ -13,11 +13,14 @@
     padding-left: 39px;
     padding-right: 37px;
     padding-bottom: 39px;
+    padding-top: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
     border-bottom: none;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
@@ -39,6 +42,7 @@
 
   @media (min-width: $desktop-width) {
     line-height: 21px;
+    padding-top: 3px;
   }
 }
 
@@ -54,7 +58,8 @@
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
     grid-row: 1/2;
-    height: 200px;
+    height: 206px;
+    margin-top: 0;
   }
 }
 
@@ -67,6 +72,7 @@
     grid-column: 1/2;
     grid-row: 2/3;
     justify-self: center;
+    margin-top: 30px;
   }
 }
 
@@ -90,13 +96,12 @@
     grid-row: 4/5;
     width: 100%;
     margin-top: 0;
+    padding-top: 10px;
   }
 }
 
 .product-card__image {
   @media (min-width: $tablet-width) {
-    margin-bottom: 30px;
     width: 168px;
-    height: 200px;
   }
 }
