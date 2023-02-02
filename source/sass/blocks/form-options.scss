@@ -30,7 +30,6 @@
     font-size: 36px;
     line-height: 36px;
     padding-bottom: 56px;
-    padding-left: 40px;
     padding-right: 41px;
   }
 }
@@ -44,8 +43,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    column-gap: 64px;
-    row-gap: 32px;
+    column-gap: 55px;
+    row-gap: 20px;
   }
 
   @media (min-width: $desktop-width) {

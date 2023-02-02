@@ -1,5 +1,16 @@
 .form-group__inner {
   display: flex;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .form-group__field {
@@ -32,7 +43,6 @@
     font-size: 36px;
     line-height: 36px;
     padding-bottom: 70px;
-    padding-left: 39px;
     padding-right: 42px;
   }
 }
@@ -41,17 +51,27 @@
   position: relative;
   color: $color-grey-600;
   margin-top: 26px;
-  padding-bottom: 19px;
-  border-bottom: 1px solid $color-grey-300;
+  padding-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
+    padding-bottom: 67px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
+  }
+}
+
+.form-group__title--field {
+  margin-top: 0;
+  margin-bottom: 35px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 75px;
   }
 }
 
@@ -64,6 +84,8 @@
   align-self: center;
   top: -45px;
   z-index: -1;
+  margin: 0;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     top: -85px;
@@ -88,5 +110,15 @@
   @media (min-width: $tablet-width) {
     top: 15px;
     left: calc(230% - 50vw);
+  }
+}
+
+.form-group--questionary {
+  padding-top: 37px;
+  padding-bottom: 24px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
   }
 }
