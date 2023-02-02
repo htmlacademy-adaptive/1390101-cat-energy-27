@@ -21,7 +21,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 76px;
+    margin-bottom: 74px;
     text-align: start;
     padding-right: 120px;
     min-height: 200px;
@@ -62,5 +62,9 @@
 
   @media (min-width: $tablet-width) {
     left: 77px;
+  }
+
+  @media (min-width: $tablet-width) {
+    left: 87px;
   }
 }

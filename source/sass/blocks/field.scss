@@ -47,10 +47,14 @@
   }
 }
 
+.field__input--icon {
+  padding-left: 17px;
+}
+
 .field__icon {
   position: absolute;
   top: calc(50% - 10px);
-  right: 12px;
+  right: 15px;
   color: $color-black;
 }
 
@@ -92,5 +96,9 @@
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 66px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 74px;
   }
 }

@@ -17,8 +17,8 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 2/3;
-    margin-top: 15px;
-    margin-bottom: 69px;
+    margin-top: 56px;
+    margin-bottom: 68px;
   }
 }
 
@@ -29,6 +29,10 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 27px;
   }
 }
 

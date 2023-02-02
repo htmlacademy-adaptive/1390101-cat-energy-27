@@ -1,11 +1,21 @@
 .form {
   overflow: hidden;
+  padding-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
 }
 
 .form__page {
   @media (min-width: $tablet-width) {
     padding-left: 70px;
     padding-right: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
@@ -25,6 +35,10 @@
     margin-bottom: 10px;
     max-width: 500px;
     padding-left: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 111px;
   }
 }
 
@@ -90,5 +104,7 @@
 
   @media (min-width: $desktop-width) {
     column-gap: 84px;
+    margin-top: 49px;
+    margin-bottom: 83px;
   }
 }
