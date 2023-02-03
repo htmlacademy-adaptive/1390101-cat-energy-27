@@ -91,14 +91,15 @@
   margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 70px;
+    margin-top: 75px;
     min-height: 174px;
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 66px;
+    margin-bottom: 64px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     margin-top: 74px;
+    margin-bottom: 66px;
   }
 }
