@@ -11,7 +11,7 @@
   border-top: 1px solid $color-grey-100;
 
   @media (min-width: $tablet-width) {
-    margin-right: 24px;
+    margin-right: 36px;
 
     &:last-child {
       margin-right: 0;
@@ -23,9 +23,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    z-index: 1;
     font-size: 20px;
     line-height: 30px;
-    z-index: 1;
   }
 }
 
@@ -57,9 +57,11 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-bottom: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 4px;
   }
 }
 

@@ -38,13 +38,14 @@
 }
 
 .radio__control-label {
-  margin-left: 15px;
+  margin-left: 13px;
   font-size: 16px;
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    margin-left: 18px;
   }
 }
 

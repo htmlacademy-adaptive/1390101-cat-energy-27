@@ -10,6 +10,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    margin-right: 13px;
   }
 }
 
@@ -23,7 +24,7 @@
   margin: 0;
   font-family: $font-second;
   min-height: 45px;
-  padding-left: 15px;
+  padding-left: 21px;
   border: 1px solid $color-grey-150;
   width: 150px;
   flex-grow: 1;
@@ -32,7 +33,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding-left: 20px;
+    min-height: 52px;
 
     &::after {
       content: "";
@@ -46,10 +47,14 @@
   }
 }
 
+.field__input--icon {
+  padding-left: 17px;
+}
+
 .field__icon {
   position: absolute;
   top: calc(50% - 10px);
-  right: 12px;
+  right: 15px;
   color: $color-black;
 }
 
@@ -79,15 +84,22 @@
   width: 100%;
   font-size: 16px;
   line-height: 18px;
-  padding-left: 19px;
-  padding-top: 10px;
+  padding-left: 15px;
+  padding-top: 9px;
   min-height: 150px;
-  margin-top: 30px;
+  margin-top: 36px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 70px;
+    margin-top: 75px;
     min-height: 174px;
     font-size: 20px;
     line-height: 30px;
+    margin-bottom: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 74px;
+    margin-bottom: 66px;
   }
 }

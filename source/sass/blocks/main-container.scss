@@ -12,8 +12,21 @@
     border-top: none;
     font-size: 60px;
     line-height: 60px;
-    padding-bottom: 50px;
+    padding-bottom: 56px;
     padding-top: 55px;
-    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 70px;
+  }
+}
+
+.main-container__title--form {
+  @media (min-width: $tablet-width) {
+    padding-left: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 40px;
   }
 }

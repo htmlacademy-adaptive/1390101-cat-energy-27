@@ -23,7 +23,8 @@
 }
 
 .social__link {
-  display: block;
+  display: grid;
+  place-content: center;
   width: 30px;
   height: 30px;
   padding: 5px;

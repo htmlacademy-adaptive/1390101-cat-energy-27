@@ -7,12 +7,21 @@
   font-size: 12px;
   line-height: 16px;
   color: $color-grey-600;
-  margin-top: 13px;
+  margin: 0;
+  margin-top: 3px;
+  align-content: center;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 16px;
-    padding-bottom: 30px;
+    padding-bottom: 32px;
+    margin-top: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 17px;
+    padding-bottom: 31px;
+    margin-right: 3px;
   }
 }
 
