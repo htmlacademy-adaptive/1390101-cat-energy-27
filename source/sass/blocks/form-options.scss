@@ -35,6 +35,10 @@
     margin-left: -39px;
     float: left;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 58px;
+  }
 }
 
 .form-options__list {
